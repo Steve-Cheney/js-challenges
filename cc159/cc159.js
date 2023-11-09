@@ -21,7 +21,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(21,21,21);
   
   let force = -1 * gravity * sin(angle) / len;
   
@@ -36,7 +36,7 @@ function draw() {
   
   stroke(255);
   strokeWeight(8);
-  fill(127);
+  fill(124,58,237);
   line(origin.x, origin.y, bob.x, bob.y);
   circle(bob.x, bob.y, 64);
 }
