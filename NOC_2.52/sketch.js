@@ -4,19 +4,27 @@
 
 var x;
 var y;
-var step = 10;
+var step = 5;
+var cx;
+var cy;
+var fr = 60;
 
 function setup() {
   createCanvas(400, 400);
   x = 200;
   y = 200;
+  lx = x;
+  ly = y;
   background(21, 21, 21);
 }
 
 function draw() {
+  lx = x;
+  ly = y;
+  frameRate(fr);
   stroke(124, 58, 237);
   strokeWeight(4);
-  point(x, y);
+  point(lx, ly);
   var r = floor(random(4));
   switch (r) {
     case 0: // up
@@ -60,4 +68,9 @@ function draw() {
       x += step;
       break;
   }
+  lx = x;
+  ly = y;
+  stroke(255);
+  strokeWeight(4);
+  point(x, y);
 }
