@@ -1,8 +1,3 @@
-// Starfield
-// The Coding Train / Daniel Shiffman
-// https://thecodingtrain.com/challenges/1-starfield
-// https://youtu.be/17WoOqgXsRM
-
 class Star {
 
   constructor(r,g,b,rad_mult = 1) {
